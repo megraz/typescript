@@ -1,7 +1,7 @@
 import {User} from './utilisateurs';
 
 export class UserList { //UserList = gestion utilisateur
-    users: User[] = [];//pr définir un utilisateur on rajoute = [] ou sinon on fait un construct
+    users: User[] = [];//pr initialiser, définir le taleau utili on rajoute = [] ou sinon on fait un construct
 
     add(u: User) {
         this.users.push(u);
