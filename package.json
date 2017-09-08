@@ -1,0 +1,27 @@
+{
+    "name": "typescript",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/main.js",
+    "dependencies": {
+        "body-parser": "^1.17.2",
+        "express": "^4.15.4"
+    },
+    "devDependencies": {
+        "@types/body-parser": "^1.16.5",
+        "@types/express": "^4.0.37"
+    },
+    "scripts": {
+        "test": "node dist/test.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/megraz/typescript.git"
+    },
+    "author": "marlene",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/megraz/typescript/issues"
+    },
+    "homepage": "https://github.com/megraz/typescript#readme"
+}

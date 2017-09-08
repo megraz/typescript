@@ -1,11 +1,17 @@
 import {User} from './utilisateurs';
 
 export class UserList { //UserList = gestion utilisateur
-    users: User[] = [];//pr initialiser, définir le taleau utili on rajoute = [] ou sinon on fait un construct
+    users: User[];//pr initialiser, définir le taleau utili on rajoute = [] => users: User[] = []ou sinon on fait un construct
+
+    constructor() {
+        this.users = [];
+    }
 
     add(u: User) {
-        this.users.push(u);
+       // this.users.push(u);
     }
+
+
 
     del(name: string) {
         for(let i = 0; i<this.users.length; i++) { //tableau ac plusieurs éléments, this.users.length = la longueur du tab (i<4 dc 4)
@@ -25,6 +31,7 @@ export class UserList { //UserList = gestion utilisateur
 }
 }
 
+/*
 let list = new UserList();
 list.add(new User("toto", "toto"));
 list.add(new User("titi", "titi"));
@@ -33,3 +40,4 @@ list.del("toto");
 console.log(list);
 let u = list.auth("titi", "titi");
 console.log(u);
+*/

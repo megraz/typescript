@@ -12,9 +12,7 @@ notre router regroupera les routes liées au Todo's
 export const router = express.Router(); //on fait un router ac des méthodes et des chemins
 
 //Route permettant de récupérer les todo
-router.get('/' , (req, res) => {
-    res.json(todo.lister());
-});
+router.get('/', (req, res) => res.json(todo.lister()));
 
 //Route permettant d'ajouter un todo
 router.post('/' , (req, res) => { //ajoute ce qui a été récup par le post dans le body
